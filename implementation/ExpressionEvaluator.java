@@ -175,6 +175,7 @@ public class ExpressionEvaluator implements IExpressionEvaluator {
 			
 			else if(expression.charAt(i)=='/'){
 				int r1=(int)s.pop();int r2=(int)s.pop();
+				if(r1==0) {throw new UnsupportedOperationException();}
 				result= r2/r1 ;
 				s.push(result);
 			}
