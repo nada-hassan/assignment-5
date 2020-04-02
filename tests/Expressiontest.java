@@ -123,4 +123,14 @@ public class Expressiontest {
 		String postfix= e.infixToPostfix(str);
 		e.evaluate(postfix);
 		 }
+	
+	@Test(expected = Exception.class)
+	public void test13() {
+		ExpressionEvaluator e = new ExpressionEvaluator();
+		String str="3+7/0-3/4";
+		String expected="3 7 0 / + 3 4 / -";
+		String postfix= e.infixToPostfix(str);
+		assertEquals(expected, postfix);
+		e.evaluate(postfix);
+		 }
 }
