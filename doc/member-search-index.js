@@ -1,0 +1,1 @@
+memberSearchIndex = [{"p":"eg.edu.alexu.csd.datastructure.stack.cs88","c":"Main","l":"Main()","url":"%3Cinit%3E()"},{"p":"eg.edu.alexu.csd.datastructure.stack.cs88","c":"Main","l":"main(String[])","url":"main(java.lang.String[])"}]
